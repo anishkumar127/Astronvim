@@ -15,5 +15,14 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+
+
+
 require "lazy_setup"
 require "polish"
+require('nvim-treesitter.install').compilers = { "zig", "gcc", "clang" }
+require('nvim-treesitter.configs').setup {
+    ensure_installed = { "bash", "c", "lua", "typescript", "tsx", "vim", "python","vimdoc" },
+    highlight = { enable = true },
+    indent = { enable = true },
+}
