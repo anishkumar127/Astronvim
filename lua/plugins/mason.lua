@@ -15,8 +15,8 @@ return {
         "html",
         "eslint",
         "tailwindcss",
-					"emmet_language_server",
-					"jsonls",
+					-- "emmet_language_server",
+					-- "jsonls",
      
         -- "tsserver"
         -- add more arguments for adding more language servers
@@ -29,6 +29,7 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
+         "prettier",
         "stylua",
         -- add more arguments for adding more null-ls sources
       },
