@@ -3,6 +3,7 @@
 
 ---@type LazySpec
 -- require('nvim-treesitter.install').compilers = { "zig", "gcc", "clang" }
+require("nvim-treesitter.install").prefer_git = true
 
 return {
   "nvim-treesitter/nvim-treesitter",
