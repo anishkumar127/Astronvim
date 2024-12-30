@@ -9,7 +9,7 @@ return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
     ensure_installed = {
-      -- "typescript",
+      "typescript",
       -- "lua_ls",
       "lua",
       "vim",
